@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Node.js</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="#" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+</head>
+
+<body>
+    <script src="sketch.js"></script>
+
+    <div>
+        <h2>Hello There</h2>
+        <div>
+            <a href="/">Page</a> | <a href="/logs">View</a>
+            <p>
+                Weahter Info <br />
+                The weather here at (latitude: <span id="lat"></span>&deg;, longitude: <span id="lng"></span>&deg;) is
+                <span id="summary"></span> with a temperature of <span id="temp"></span>&deg; C.
+                <br /> <br />
+                Air Info <br />
+                The concentration of particulate matter (<span id="aq_parameter"></span>) is <span id="aq_value"></span>
+                <span id="aq_units"></span> last read on <span id="aq_date"></span>.
+            </p>
+            <button id="checkin">check in</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
