@@ -5,9 +5,11 @@ require('dotenv').config();
 
 const app = express();
 
-//在伺服器端3000port的地方顯示public資料夾裡的index.html
-app.listen(3000, () => console.log('listening at 3000'));
-app.use(express.static('public'))
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+    console.log(`starting server at ${port}`)
+});
+app.use(express.static(`public`))
 app.use(express.json({ limit: '1mb' }));
 
 //create and save data to database.db

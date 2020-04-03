@@ -27,7 +27,7 @@ if ('geolocation' in navigator) {
 
         } catch (error) {
             console.error(error);
-            document.getElementById('summary').textContent = 'None';
+            //document.getElementById('summary').textContent = 'None';
             //if no info, set value -1
             air = { value: -1 };
         }
